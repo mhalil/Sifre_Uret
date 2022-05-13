@@ -2,10 +2,10 @@
 
 Yazılan karaktere benzer karakterler kullanılarak bir tür şifre üreten Uygulama.
 
-Bilgisayar, e-posta, e-devlet, banka,..vb mecralarda kullanak üzere, belirlediğiniz kelime ya da kelimelere, benzer karakterleri kullanarak şifre üretebilirsiniz. Böylece Belirlediğiniz şifreleri hatırlamak ve yazmak kolaylaşacaktır.
+Bilgisayar, e-posta, e-devlet, banka,..vb mecralarda kullanmak üzere, belirlediğiniz kelime ya da kelimelere, benzer karakterleri kullanarak şifre üretebilirsiniz. Böylece Belirlediğiniz şifreleri hatırlamak ve yazmak kolaylaşacaktır.
 
 ## Kullanım Bilgisi
-Girdi kısmına (Entry) şifrelenmek istenen kelime ya da kelimeler yazıldıktan sonra, **Şifre Üret** düğmesine her basılma sonrası rastgele karakter seçimi yapılarak şifre üretilir ve Metin Kutusuna (Text) eklenir.
+Girdi kısmına (Entry) şifrelenmek istenen kelime ya da kelimeler yazıldıktan sonra, **Şifre Üret** düğmesine her basıldığında (rastgele seçim yapılarak) şifre üretilir ve Metin Kutusunda (Text) en alt kısma eklenir.
 
 
 Üretilerek Metin kutusuna eklenen şifreler, **Kaydet** düğmesine basılarak aynı dizine *Sifreli_Metin.txt* ismiyle kaydedilir.
