@@ -66,7 +66,7 @@ def sifre_uret():
 def kaydet():
     sonuc = int(sonuc_penceresi.index("end")[:-2]) - 2
     if sonuc > 0:
-        with open("Şifreli_Metin.txt", "w", encoding="UTF-8") as dosya:
+        with open("Sifreli_Metin.txt", "w", encoding="UTF-8") as dosya:
             bulunan_kelime = str(int(sonuc_penceresi.index("end")[:-2]) - 2)
             dosya.write("'" + girdi.get() + "' Kelimesi için " + bulunan_kelime + " adet şifre üretilmiştir .\nÜretilen Şifreli kelimeler, aşağıda listelenmiştir.\n\n" + sonuc_penceresi.get("1.0","end"))
     else:
