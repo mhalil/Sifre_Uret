@@ -44,24 +44,18 @@ sozluk = {
 
 def sifre_uret():
         
-    alfabe = "abcçdefgğhıijklmnoöpqrsştuüvwxyz ABCÇDEFGĞHIİJKLMNOÖPQRSŞTUÜVWXYZ"
-
-    for karakter in girdi.get():
-        if karakter not in alfabe:
-            messagebox.showerror("Hatalı Karakter!","İzin verilen karakterlerin dışında bir veya daha fazla karakter yazdığınız için, işleme devam edilemiyor!\nKullanılabilir karakterler şunlardır:\nabcçdefgğhıijklmnoöpqrsştuüvwxyz ")
-            break
-        
-        else:
-            sifrelenen = ""
-            for harf in girdi.get().upper():               
-                sifrelenen += random.choice(sozluk[harf])
-            sonuc_penceresi.insert(END,sifrelenen + "\n")
-
-            uretilen_sifre_miktari = int(sonuc_penceresi.index("end")[:-2]) - 2
-            if uretilen_sifre_miktari > 0:
-                btn_kaydet.configure(state = "normal")
-
-            break
+    sifrelenen = ""
+    try:
+        for harf in girdi.get().upper():               
+            sifrelenen += random.choice(sozluk[harf])
+        sonuc_penceresi.insert(END,sifrelenen + "\n")
+    
+    except:
+        messagebox.showerror("Hatalı Karakter!","İzin verilen karakterlerin dışında bir veya daha fazla karakter yazdığınız için, işleme devam edilemiyor!\nKullanılabilir karakterler şunlardır:\nabcçdefgğhıijklmnoöpqrsştuüvwxyz ")
+    
+    uretilen_sifre_miktari = int(sonuc_penceresi.index("end")[:-2]) - 2
+    if uretilen_sifre_miktari > 0:
+        btn_kaydet.configure(state = "normal")
 
 def kaydet():
     sonuc = int(sonuc_penceresi.index("end")[:-2]) - 2
