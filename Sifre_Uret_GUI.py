@@ -120,6 +120,7 @@ aciklama.grid(row=0, column=0, columnspan=2, padx=10, pady=5)
 girdi = tk.Entry(pencere, 
                 width=34,
                 bg = arkaplan_rengi_metin)
+girdi.focus()            
 girdi.grid(row=1, column=0, columnspan=2, padx=10, pady=10)
 
 sonuc_penceresi = tk.Text(pencere,
